@@ -1,0 +1,27 @@
+.App {
+    text-align: left;
+}
+
+.card {
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.item {
+    border: 1px solid;
+}
+
+.content {
+    padding-left: 10px;
+}
+
+.code {
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.MyDragHandleClassName {
+    cursor: move;
+    height: 40px;
+    line-height: 38px;
+    background: #61dafb;
+}

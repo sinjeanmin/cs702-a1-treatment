@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/sinjeanmin/OneDrive/SMU-PG/2021-2022 T2/CS702-Computational Interaction/A1/cs702_a1_treatment/api/venv/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from dotenv.cli import cli
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(cli())
