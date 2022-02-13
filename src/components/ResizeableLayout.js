@@ -81,14 +81,14 @@ const ResizeableLayout = (props) => {
                     </Tabs>
                 </Box>
                 <TabPanel value={value} index={0}>
-                    {questions[0].question}
+                    {questions[0].question} ({questions[0].company})
                     <Divider />
                     {capitalize(questions[0].difficulty)}
                     <Divider />
                     {questions[0].description}
                 </TabPanel>
                 <TabPanel value={value} index={1}>
-                    {questions[1].question}
+                    {questions[1].question} ({questions[1].company})
                     <Divider />
                     {capitalize(questions[1].difficulty)}
                     <Divider />

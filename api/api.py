@@ -38,7 +38,9 @@ def random_question_selector(filtered_questions, history):
         q2_num = filtered_questions[0]['q2']
         history.append(q1_num)
         history.append(q2_num)
-    return get_selected_questions(q1_num, q2_num), history
+        return get_selected_questions(q1_num, q2_num), history
+    # return None, None
+    
 
 @app.route('/resethistory')
 # @cross_origin()
@@ -62,6 +64,13 @@ def CodingForm():
         for q in all_avail_questions:
             if q['level'] == difficulty_code and q['company'] == company_code:
                 filtered_questions.append(q)
+    print(filtered_questions)
     questions, history = random_question_selector(filtered_questions, history)
     return {'questions': questions}
 
+# Description:
+# This is a personal coding trainer to prepare for technical interviews. Questions here are submitted by interviewees of Meta, Amazon and Google. Similar to the real interview, you will be given 60 minutes to complete 2 coding questions of different difficulty level.
+
+# Constraints:
+# 1) There must be at least 2 difficulty level selected from Easy, Medium, Hard. 
+# 2) You can choose up to 2 companies to train with. This means Q1 will be from company A, and Q2 from company B. 

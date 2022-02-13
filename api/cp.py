@@ -39,12 +39,11 @@ def get_company_code(company):
     amazon = 0
     google = 0
     for choice in company:
-        choice = choice.lower()
-        if choice == 'meta':
+        if choice == 'Meta':
             meta += 1
-        elif choice == 'amazon':
+        elif choice == 'Amazon':
             amazon += 1
-        elif choice == 'google':
+        elif choice == 'Google':
             google += 1
     
     if meta == 1 and amazon == 0 and google == 0: #meta only

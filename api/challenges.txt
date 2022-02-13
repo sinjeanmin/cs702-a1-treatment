@@ -3,108 +3,108 @@
         "question": "Two Sum",
         "difficulty": "easy",
         "description": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.",
-        "company": "meta"
+        "company": "Meta"
     },
     "2": {
         "question": "Palindrome Number",
         "difficulty": "easy",
         "description": "Given an integer x, return true if x is palindrome integer. An integer is a palindrome when it reads the same backward as forward. For example, 121 is a palindrome while 123 is not.",
-        "company": "amazon"
+        "company": "Amazon"
     },
     "3": {
         "question": "Valid Parentheses",
         "difficulty": "easy",
         "description": "Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if: Open brackets must be closed by the same type of brackets. Open brackets must be closed in the correct order. ",
-        "company": "google"
+        "company": "Google"
     },
     "4": {
         "question": "Search Insert Position",
         "difficulty": "easy",
         "description": "Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.",
-        "company": "meta"
+        "company": "Meta"
     },
     "5": {
         "question": "Plus One",
         "difficulty": "easy",
         "description": "You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading 0's. Increment the large integer by one and return the resulting array of digits.",
-        "company": "amazon"
+        "company": "Amazon"
     },
     "6": {
         "question": "Longest Common Prefix",
         "difficulty": "easy",
         "description": "Write a function to find the longest common prefix string amongst an array of strings. If there is no common prefix, return an empty string \"\".",
-        "company": "google"
+        "company": "Google"
     },
     "7": {
         "question": "Add Two Numbers",
         "difficulty": "medium",
         "description": "You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list. You may assume the two numbers do not contain any leading zero, except the number 0 itself. ",
-        "company": "meta"
+        "company": "Meta"
     },
     "8": {
         "question": "Reverse Integer",
         "difficulty": "medium",
         "description": "Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.",
-        "company": "amazon"
+        "company": "Amazon"
     },
     "9": {
         "question": "Spiral Matrix",
         "difficulty": "medium",
         "description": "Given an m x n matrix, return all elements of the matrix in spiral order.",
-        "company": "google"
+        "company": "Google"
     },
     "10": {
         "question": "Multiply Strings",
         "difficulty": "medium",
         "description": "Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2, also represented as a string.",
-        "company": "meta"
+        "company": "Meta"
     },
     "11": {
         "question": "Permutations",
         "difficulty": "medium",
         "description": "Given an array nums of distinct integers, return all the possible permutations. You can return the answer in any order.",
-        "company": "amazon"
+        "company": "Amazon"
     },
     "12": {
         "question": "Group Anagrams",
         "difficulty": "medium",
         "description": "Given an array of strings strs, group the anagrams together. You can return the answer in any order. An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.",
-        "company": "google"
+        "company": "Google"
     },
     "13": {
         "question": "Candy",
         "difficulty": "difficult",
         "description": "There are n children standing in a line. Each child is assigned a rating value given in the integer array ratings. You are giving candies to these children subjected to the following requirements:Each child must have at least one candy. Children with a higher rating get more candies than their neighbors. Return the minimum number of candies you need to have to distribute the candies to the children.",
-        "company": "meta"
+        "company": "Meta"
     },
     "14": {
         "question": "Max Points on a Line",
         "difficulty": "difficult",
         "description": "Given an array of points where points[i] = [xi, yi] represents a point on the X-Y plane, return the maximum number of points that lie on the same straight line.",
-        "company": "amazon"
+        "company": "Amazon"
     },
     "15": {
         "question": "Number of Digit One",
         "difficulty": "difficult",
         "description": "Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n.",
-        "company": "google"
+        "company": "Google"
     },
     "16": {
         "question": "Basic Calculator",
         "difficulty": "difficult",
         "description": "Given a string s representing a valid expression, implement a basic calculator to evaluate it, and return the result of the evaluation. Note: You are not allowed to use any built-in function which evaluates strings as mathematical expressions, such as eval().",
-        "company": "meta"
+        "company": "Meta"
     },
     "17": {
         "question": "Shortest Palindrome",
         "difficulty": "difficult",
         "description": "You are given a string s. You can convert s to a palindrome by adding characters in front of it. Return the shortest palindrome you can find by performing this transformation.",
-        "company": "amazon"
+        "company": "Amazon"
     },
     "18": {
         "question": "First Missing Positive",
         "difficulty": "difficult",
         "description": "Given an unsorted integer array nums, return the smallest missing positive integer. You must implement an algorithm that runs in O(n) time and uses constant extra space.",
-        "company": "google"
+        "company": "Google"
     }
 }
