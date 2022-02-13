@@ -1,11 +1,17 @@
+from audioop import cross
 import time, json
 import cp
 from flask import Flask, request
 from flask_cors import CORS, cross_origin
 
+class History:
+    def __init__(self, history):
+        self.history = history
+
 app = Flask(__name__)
 CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
+h = History([])
 
 @app.route('/time')
 def get_current_time():
@@ -34,16 +40,17 @@ def random_question_selector(filtered_questions, history):
         history.append(q2_num)
     return get_selected_questions(q1_num, q2_num), history
 
+@app.route('/resethistory')
+# @cross_origin()
+def ResetHistory():
+    h.history = []
+
 @app.route('/codingform', methods=['POST'])
 @cross_origin()
 def CodingForm():
-    difficulty = request.json['difficulty'] #todo
-    # print(difficulty)
-    company = request.json['company'] #todo
-    # history = request.json['history'] #todo? 
-    history = None
-    if history == None:
-        history = []
+    difficulty = request.json['difficulty']
+    company = request.json['company']
+    history = h.history
     # history = [1,2,3,7,8,9,13,14,15] #testing
     difficulty_code = cp.get_difficulty_code(difficulty) #todo
     # difficulty_code = cp.get_difficulty_code(['Easy', 'Medium']) #testing
@@ -56,7 +63,7 @@ def CodingForm():
             if q['level'] == difficulty_code and q['company'] == company_code:
                 filtered_questions.append(q)
     questions, history = random_question_selector(filtered_questions, history)
-    return {'questions': questions, 'history': history}
+    return {'questions': questions}
 
 # Description:
 # This is a personal coding trainer to prepare for technical interviews. Questions here are submitted by interviewees of Meta, Amazon and Google. Similar to the real interview, you will be given 60 minutes to complete 2 coding questions of different difficulty level.
