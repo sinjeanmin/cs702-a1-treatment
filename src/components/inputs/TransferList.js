@@ -2,6 +2,7 @@ import * as React from 'react';
 import Grid from '@mui/material/Grid';
 import List from '@mui/material/List';
 import Card from '@mui/material/Card';
+import FormLabel from '@mui/material/FormLabel';
 import CardHeader from '@mui/material/CardHeader';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
@@ -128,34 +129,36 @@ const TransferList = (props) => {
     );
 
     return (
-        <Grid container spacing={2} justifyContent="center" alignItems="center">
-            <Grid item>{customList('Choices', left)}</Grid>
-            <Grid item>
-                <Grid container direction="column" alignItems="center">
-                    <Button
-                        sx={{ my: 0.5 }}
-                        variant="outlined"
-                        size="small"
-                        onClick={handleCheckedRight}
-                        disabled={leftChecked.length === 0}
-                        aria-label="move selected right"
-                    >
-                        &gt;
-                    </Button>
-                    <Button
-                        sx={{ my: 0.5 }}
-                        variant="outlined"
-                        size="small"
-                        onClick={handleCheckedLeft}
-                        disabled={rightChecked.length === 0}
-                        aria-label="move selected left"
-                    >
-                        &lt;
-                    </Button>
+        <div><FormLabel id="company-label">Select Company Test Bank</FormLabel>
+            <Grid container spacing={2} justifyContent="center" alignItems="center">
+                <Grid item>{customList('Choices', left)}</Grid>
+                <Grid item>
+                    <Grid container direction="column" alignItems="center">
+                        <Button
+                            sx={{ my: 0.5 }}
+                            variant="outlined"
+                            size="small"
+                            onClick={handleCheckedRight}
+                            disabled={leftChecked.length === 0}
+                            aria-label="move selected right"
+                        >
+                            &gt;
+                        </Button>
+                        <Button
+                            sx={{ my: 0.5 }}
+                            variant="outlined"
+                            size="small"
+                            onClick={handleCheckedLeft}
+                            disabled={rightChecked.length === 0}
+                            aria-label="move selected left"
+                        >
+                            &lt;
+                        </Button>
+                    </Grid>
                 </Grid>
+                <Grid item>{customList('Chosen', right)}</Grid>
             </Grid>
-            <Grid item>{customList('Chosen', right)}</Grid>
-        </Grid>
+        </div>
     );
 }
 

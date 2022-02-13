@@ -13,15 +13,20 @@ import TransferList from "./inputs/TransferList";
 import "../App.css";
 import APIService from "../api/APIService";
 
-const Form = () => {
+const Form = (props) => {
   const [selected, setSelected] = React.useState([]);
   const [difficulty, setDifficulty] = React.useState([false, false, false]);
+  const [counter, setCounter] = React.useState(0);
+  const questionsHandler = props.questionsHandler;
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    setCounter(counter + 1);
     APIService.submitForm({
       difficulty: getDifficultyRequest(),
       company: selected
+    }).then(response => {
+        questionsHandler(response.questions);
     });
   };
 
@@ -34,7 +39,6 @@ const Form = () => {
 
   const getDifficultyRequest = () => {
     const req = [];
-    console.log(req);
     difficulty.forEach((element, index) => {
       if (element) {
         switch (index) {
@@ -71,6 +75,7 @@ const Form = () => {
             <Button sx={{ mt: 1, mr: 1 }} type="submit" variant="outlined">
               Generate
             </Button>
+            <FormLabel>You have pressed 'Generate' {counter} times</FormLabel>
           </FormControl>
         </form>
       </CardContent>
