@@ -26,7 +26,7 @@
     "5": {
         "question": "Plus One",
         "difficulty": "easy",
-        "description": "ou are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading 0's. Increment the large integer by one and return the resulting array of digits.",
+        "description": "You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading 0's. Increment the large integer by one and return the resulting array of digits.",
         "company": "amazon"
     },
     "6": {
@@ -102,7 +102,7 @@
         "company": "amazon"
     },
     "18": {
-        "question": "",
+        "question": "First Missing Positive",
         "difficulty": "difficult",
         "description": "Given an unsorted integer array nums, return the smallest missing positive integer. You must implement an algorithm that runs in O(n) time and uses constant extra space.",
         "company": "google"
