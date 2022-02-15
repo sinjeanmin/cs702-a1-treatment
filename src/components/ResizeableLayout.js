@@ -72,7 +72,7 @@ const ResizeableLayout = (props) => {
             <div
                 className="item"
                 key="question"
-                data-grid={{ x: 0, y: 0, w: 3, h: 2, minW: 2, minH: 3, maxW: 12, maxH: 4 }}
+                data-grid={{ x: 0, y: 0, w: 3, h: 3, minW: 2, minH: 2, maxW: 12, maxH: 6 }}
             >
                 <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                     <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
@@ -99,7 +99,7 @@ const ResizeableLayout = (props) => {
             <div
                 className="item"
                 key="code"
-                data-grid={{ x: 3, y: 0, w: 3, h: 2 }}
+                data-grid={{ x: 3, y: 0, w: 3, h: 2, minW: 3, maxW: 12, minH: 2, maxH: 6 }}
             >
                 <div className="MyDragHandleClassName">
                     <span className="text">Code</span>
@@ -117,7 +117,7 @@ const ResizeableLayout = (props) => {
             <div
                 className="item"
                 key="outputConsole"
-                data-grid={{ x: 6, y: 0, w: 2, h: 2, minW: 2, maxW: 12, maxH: 4 }}
+                data-grid={{ x: 6, y: 0, w: 2, h: 2, minW: 2, maxW: 12, maxH: 6 }}
             >
                 <div className="MyDragHandleClassName">
                     <span className="text">Output</span>
